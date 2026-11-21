@@ -1,0 +1,1630 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>集方阁云 - 视频品牌_官方内容生态与影像社区</title>
+<meta name="description" content="集方阁云官方网站，深耕影像内容与视频创作生态的品牌平台，汇聚原创创作者、精品内容与社区力量，为用户提供专业、值得信赖的影像服务。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Cpath d='M20 18h10v28H20z' fill='%23f6b352'/%3E%3Cpath d='M36 18h8v28h-8z' fill='%23ffffff' opacity='.85'/%3E%3Ccircle cx='48' cy='22' r='5' fill='%23f6b352'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jfg-navy:#1f3a5f;
+  --jfg-navy-deep:#14283f;
+  --jfg-amber:#f6b352;
+  --jfg-amber-deep:#e0912b;
+  --jfg-mist:#eef3f8;
+  --jfg-sky:#dce7f2;
+  --jfg-ink:#1c2733;
+  --jfg-gray:#5d6b7a;
+  --jfg-line:#d5e0ea;
+  --jfg-white:#ffffff;
+  --jfg-radius:16px;
+  --jfg-shadow:0 10px 30px rgba(20,40,63,.10);
+  --jfg-shadow-hover:0 18px 44px rgba(20,40,63,.18);
+  --jfg-sticky-h:0px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  color:var(--jfg-ink);
+  background:var(--jfg-white);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{display:block;max-width:100%;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul{list-style:none;}
+.jfg-container{width:min(1180px,92%);margin:0 auto;}
+.jfg-section{padding:84px 0;}
+.jfg-section--alt{background:var(--jfg-mist);}
+.jfg-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;letter-spacing:.16em;color:var(--jfg-amber-deep);
+  font-weight:700;text-transform:uppercase;margin-bottom:14px;
+}
+.jfg-eyebrow::before{content:"";width:26px;height:3px;border-radius:2px;background:var(--jfg-amber);}
+.jfg-h2{font-size:clamp(24px,3.2vw,34px);color:var(--jfg-navy-deep);line-height:1.35;letter-spacing:.01em;font-weight:800;}
+.jfg-section-head{max-width:760px;margin-bottom:42px;}
+.jfg-section-head p{margin-top:14px;color:var(--jfg-gray);font-size:15.5px;}
+
+/* ===== 吸顶：公告条 + 页头 ===== */
+.jfg-sticky-wrap{
+  position:sticky;top:0;z-index:120;
+}
+.jfg-announce{
+  background:linear-gradient(90deg,var(--jfg-navy-deep),var(--jfg-navy) 55%,#24466f);
+  color:#eaf1f9;font-size:13.5px;
+  display:flex;align-items:center;gap:18px;
+  padding:9px 0;
+}
+.jfg-announce .jfg-container{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.jfg-announce-badge{
+  background:var(--jfg-amber);color:var(--jfg-navy-deep);
+  font-weight:800;font-size:12px;letter-spacing:.08em;
+  padding:2px 10px;border-radius:999px;flex-shrink:0;
+}
+.jfg-announce-text{flex:1;min-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.jfg-announce a{color:var(--jfg-amber);font-weight:700;white-space:nowrap;}
+.jfg-announce a:hover{text-decoration:underline;}
+
+.jfg-header{
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--jfg-line);
+}
+.jfg-header-inner{
+  display:flex;align-items:center;gap:26px;
+  height:72px;
+}
+.jfg-logo{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.jfg-logo-mark{
+  width:40px;height:40px;border-radius:11px;
+  background:linear-gradient(140deg,var(--jfg-navy),#2c5688);
+  display:grid;place-items:center;position:relative;overflow:hidden;
+}
+.jfg-logo-mark span{position:absolute;border-radius:2px;}
+.jfg-logo-mark span:nth-child(1){width:7px;height:20px;background:var(--jfg-amber);left:11px;top:10px;}
+.jfg-logo-mark span:nth-child(2){width:7px;height:14px;background:#fff;opacity:.9;left:22px;top:10px;}
+.jfg-logo-mark span:nth-child(3){width:6px;height:6px;border-radius:50%;background:var(--jfg-amber);right:7px;bottom:8px;}
+.jfg-logo-text b{display:block;font-size:18px;color:var(--jfg-navy-deep);letter-spacing:.06em;}
+.jfg-logo-text i{display:block;font-style:normal;font-size:10.5px;letter-spacing:.32em;color:var(--jfg-gray);}
+.jfg-nav{display:flex;gap:4px;margin-left:8px;flex:1;}
+.jfg-nav a{
+  font-size:14.5px;color:#3b4a5a;padding:8px 13px;border-radius:9px;
+  font-weight:500;transition:.2s;white-space:nowrap;
+}
+.jfg-nav a:hover{background:var(--jfg-sky);color:var(--jfg-navy);}
+.jfg-header-tools{display:flex;align-items:center;gap:12px;flex-shrink:0;}
+.jfg-search{
+  display:flex;align-items:center;gap:8px;
+  background:var(--jfg-mist);border:1px solid var(--jfg-line);
+  border-radius:999px;padding:6px 8px 6px 16px;transition:.25s;
+}
+.jfg-search:focus-within{border-color:var(--jfg-amber);box-shadow:0 0 0 3px rgba(246,179,82,.22);}
+.jfg-search input{
+  border:none;background:none;outline:none;width:150px;
+  font-size:14px;color:var(--jfg-ink);
+}
+.jfg-search input::placeholder{color:#93a2b1;}
+.jfg-search button{
+  width:30px;height:30px;border-radius:50%;background:var(--jfg-navy);color:#fff;
+  display:grid;place-items:center;font-size:14px;transition:.2s;
+}
+.jfg-search button:hover{background:var(--jfg-amber-deep);}
+.jfg-search-tip{
+  font-size:12.5px;color:var(--jfg-amber-deep);margin-top:6px;
+  min-height:18px;text-align:right;letter-spacing:.02em;
+}
+.jfg-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-weight:700;font-size:14.5px;border-radius:999px;
+  padding:11px 24px;transition:.25s;white-space:nowrap;
+}
+.jfg-btn--primary{background:var(--jfg-navy);color:#fff;box-shadow:0 8px 20px rgba(31,58,95,.25);}
+.jfg-btn--primary:hover{background:var(--jfg-navy-deep);transform:translateY(-2px);}
+.jfg-btn--amber{background:var(--jfg-amber);color:var(--jfg-navy-deep);box-shadow:0 8px 20px rgba(246,179,82,.4);}
+.jfg-btn--amber:hover{background:var(--jfg-amber-deep);transform:translateY(-2px);}
+.jfg-btn--ghost{border:1.5px solid rgba(255,255,255,.6);color:#fff;}
+.jfg-btn--ghost:hover{background:rgba(255,255,255,.14);}
+.jfg-btn--line{border:1.5px solid var(--jfg-navy);color:var(--jfg-navy);}
+.jfg-btn--line:hover{background:var(--jfg-navy);color:#fff;}
+.jfg-burger{
+  display:none;width:42px;height:42px;border-radius:10px;
+  border:1px solid var(--jfg-line);background:#fff;
+  flex-direction:column;align-items:center;justify-content:center;gap:5px;
+}
+.jfg-burger i{display:block;width:19px;height:2px;background:var(--jfg-navy);border-radius:2px;transition:.25s;}
+.jfg-burger.is-open i:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.jfg-burger.is-open i:nth-child(2){opacity:0;}
+.jfg-burger.is-open i:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.jfg-mobile-nav{display:none;border-top:1px solid var(--jfg-line);background:#fff;}
+.jfg-mobile-nav.is-open{display:block;}
+.jfg-mobile-nav a{display:block;padding:13px 4%;font-size:15px;border-bottom:1px solid var(--jfg-mist);color:#3b4a5a;}
+.jfg-mobile-nav a:hover{background:var(--jfg-mist);color:var(--jfg-navy);}
+
+/* ===== 首屏 ===== */
+.jfg-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 520px at 82% -12%,rgba(246,179,82,.20),transparent 62%),
+    radial-gradient(900px 520px at 4% 8%,rgba(220,231,242,.9),transparent 60%),
+    linear-gradient(180deg,#f7fafd,#e9f1f8);
+  padding:70px 0 82px;
+}
+.jfg-hero-grid{
+  display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center;
+}
+.jfg-hero h1{
+  font-size:clamp(42px,6.2vw,70px);
+  line-height:1.08;letter-spacing:.06em;
+  color:var(--jfg-navy-deep);font-weight:900;margin-bottom:16px;
+}
+.jfg-hero h1 em{
+  font-style:normal;color:var(--jfg-amber-deep);position:relative;
+}
+.jfg-hero-tag{
+  display:inline-flex;align-items:center;gap:10px;
+  background:#fff;border:1px solid var(--jfg-line);
+  border-radius:999px;padding:6px 16px;font-size:13px;color:var(--jfg-navy);
+  font-weight:600;margin-bottom:20px;box-shadow:0 4px 14px rgba(20,40,63,.06);
+}
+.jfg-hero-tag i{width:7px;height:7px;border-radius:50%;background:#3fbf8f;display:block;}
+.jfg-hero-lead{font-size:17px;color:#41566c;max-width:520px;margin-bottom:12px;font-weight:600;}
+.jfg-hero-desc{font-size:15px;color:var(--jfg-gray);max-width:540px;margin-bottom:28px;}
+.jfg-hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;}
+.jfg-hero-stats{display:flex;gap:38px;flex-wrap:wrap;}
+.jfg-stat b{display:block;font-size:28px;color:var(--jfg-navy-deep);font-weight:900;letter-spacing:.02em;line-height:1.2;}
+.jfg-stat span{font-size:13px;color:var(--jfg-gray);}
+.jfg-hero-visual{position:relative;}
+.jfg-hero-frame{
+  border-radius:22px;overflow:hidden;box-shadow:var(--jfg-shadow-hover);
+  border:6px solid #fff;background:#fff;position:relative;
+}
+.jfg-hero-frame img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;}
+.jfg-hero-play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.jfg-hero-play span{
+  width:74px;height:74px;border-radius:50%;
+  background:rgba(255,255,255,.9);display:grid;place-items:center;
+  box-shadow:0 12px 30px rgba(20,40,63,.3);
+  transition:.3s;
+}
+.jfg-hero-play span::after{
+  content:"";border-style:solid;border-width:13px 0 13px 21px;
+  border-color:transparent transparent transparent var(--jfg-navy);
+  margin-left:6px;
+}
+.jfg-hero-frame:hover .jfg-hero-play span{transform:scale(1.1);}
+.jfg-hero-badge{
+  position:absolute;right:-14px;bottom:26px;
+  background:#fff;border-radius:14px;padding:12px 18px;
+  box-shadow:var(--jfg-shadow);display:flex;align-items:center;gap:11px;
+  font-size:13px;color:var(--jfg-navy-deep);font-weight:700;border:1px solid var(--jfg-line);
+}
+.jfg-hero-badge i{
+  width:32px;height:32px;border-radius:9px;background:var(--jfg-amber);
+  display:grid;place-items:center;color:var(--jfg-navy-deep);font-style:normal;font-weight:900;font-size:15px;
+}
+.jfg-hero-badge small{display:block;font-weight:500;color:var(--jfg-gray);font-size:11.5px;}
+.jfg-hero-float{
+  position:absolute;left:-16px;top:22px;
+  background:var(--jfg-navy);color:#fff;border-radius:12px;
+  padding:10px 15px;font-size:12.5px;font-weight:600;
+  box-shadow:0 12px 26px rgba(20,40,63,.28);
+  display:flex;align-items:center;gap:8px;
+}
+.jfg-hero-float b{color:var(--jfg-amber);font-size:15px;}
+
+/* ===== 关键词解析长文 ===== */
+.jfg-about{background:#fff;}
+.jfg-about-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:56px;align-items:start;}
+.jfg-about-aside{position:sticky;top:calc(var(--jfg-sticky-h) + 24px);}
+.jfg-about-card{
+  background:linear-gradient(160deg,var(--jfg-navy),#2b5385);
+  color:#dce9f6;border-radius:var(--jfg-radius);padding:30px 26px;
+  box-shadow:var(--jfg-shadow);
+}
+.jfg-about-card h3{color:#fff;font-size:19px;margin-bottom:12px;letter-spacing:.02em;}
+.jfg-about-card p{font-size:14px;line-height:1.85;color:#c9dcee;}
+.jfg-about-card ul{margin-top:18px;display:grid;gap:10px;}
+.jfg-about-card li{font-size:13.5px;display:flex;gap:9px;align-items:flex-start;color:#dce9f6;}
+.jfg-about-card li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--jfg-amber);margin-top:9px;flex-shrink:0;}
+.jfg-about-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+.jfg-about-tags span{
+  font-size:12px;padding:4px 11px;border-radius:999px;
+  border:1px solid rgba(246,179,82,.5);color:var(--jfg-amber);
+}
+.jfg-about-body h2{margin-bottom:20px;}
+.jfg-about-body p{font-size:15.5px;color:#40505f;margin-bottom:16px;text-align:justify;}
+.jfg-about-body p strong{color:var(--jfg-navy-deep);}
+.jfg-about-divider{
+  height:1px;background:linear-gradient(90deg,var(--jfg-amber),transparent);
+  margin:26px 0;
+}
+.jfg-about-quote{
+  border-left:4px solid var(--jfg-amber);background:var(--jfg-mist);
+  padding:16px 20px;border-radius:0 12px 12px 0;
+  font-size:14.5px;color:var(--jfg-navy);font-weight:600;margin:22px 0;
+}
+
+/* ===== 焦点内容 ===== */
+.jfg-feature-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;}
+.jfg-card{
+  background:#fff;border-radius:var(--jfg-radius);overflow:hidden;
+  border:1px solid var(--jfg-line);transition:.3s;position:relative;
+}
+.jfg-card:hover{transform:translateY(-6px);box-shadow:var(--jfg-shadow-hover);border-color:var(--jfg-sky);}
+.jfg-thumb{position:relative;overflow:hidden;background:#0e1c2b;}
+.jfg-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.5s;}
+.jfg-card:hover .jfg-thumb img{transform:scale(1.05);}
+.jfg-thumb-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(14,28,43,0) 42%,rgba(14,28,43,.72));
+}
+.jfg-thumb-tag{
+  position:absolute;left:12px;top:12px;z-index:2;
+  background:rgba(246,179,82,.95);color:var(--jfg-navy-deep);
+  font-size:11.5px;font-weight:800;padding:3px 10px;border-radius:999px;letter-spacing:.05em;
+}
+.jfg-thumb-play{
+  position:absolute;inset:0;display:grid;place-items:center;z-index:2;
+}
+.jfg-thumb-play span{
+  width:52px;height:52px;border-radius:50%;
+  background:rgba(255,255,255,.88);display:grid;place-items:center;
+  opacity:0;transform:scale(.8);transition:.3s;
+}
+.jfg-thumb-play span::after{
+  content:"";border-style:solid;border-width:9px 0 9px 14px;
+  border-color:transparent transparent transparent var(--jfg-navy);margin-left:4px;
+}
+.jfg-card:hover .jfg-thumb-play span{opacity:1;transform:scale(1);}
+.jfg-thumb-dur{
+  position:absolute;right:12px;bottom:12px;z-index:2;
+  background:rgba(14,28,43,.78);color:#fff;font-size:11.5px;
+  padding:2px 8px;border-radius:5px;font-weight:600;
+}
+.jfg-feature-main .jfg-thumb img{aspect-ratio:16/8.6;}
+.jfg-card-body{padding:20px 22px 22px;}
+.jfg-card-body h3{font-size:18.5px;color:var(--jfg-navy-deep);line-height:1.45;margin-bottom:9px;}
+.jfg-card-body p{font-size:13.8px;color:var(--jfg-gray);line-height:1.7;}
+.jfg-meta{display:flex;align-items:center;gap:10px;margin-top:14px;flex-wrap:wrap;}
+.jfg-avatar{
+  width:28px;height:28px;border-radius:50%;flex-shrink:0;
+  display:grid;place-items:center;font-size:12.5px;font-weight:800;color:#fff;
+}
+.jfg-avatar--a{background:#3f7fd4;}
+.jfg-avatar--b{background:#e0912b;}
+.jfg-avatar--c{background:#3fbf8f;}
+.jfg-avatar--d{background:#a06bc4;}
+.jfg-avatar--e{background:#d4586f;}
+.jfg-avatar--f{background:#4b8d9c;}
+.jfg-meta-name{font-size:13px;color:#3b4a5a;font-weight:600;}
+.jfg-meta-dot{width:3px;height:3px;border-radius:50%;background:#b9c6d3;}
+.jfg-meta-sub{font-size:12.5px;color:#8b9aa8;}
+.jfg-card-foot{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:16px;padding-top:14px;border-top:1px dashed var(--jfg-line);gap:10px;flex-wrap:wrap;
+}
+.jfg-actions{display:flex;gap:8px;flex-wrap:wrap;}
+.jfg-action{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:12.5px;color:#5d6b7a;border:1px solid var(--jfg-line);
+  border-radius:999px;padding:4px 12px;transition:.2s;background:#fff;
+}
+.jfg-action:hover{border-color:var(--jfg-amber);color:var(--jfg-amber-deep);}
+.jfg-action.is-liked{background:#fde8d0;border-color:var(--jfg-amber);color:var(--jfg-amber-deep);font-weight:700;}
+.jfg-action.is-saved{background:#e3f0fb;border-color:#9fc4e8;color:#2c5688;font-weight:700;}
+.jfg-feature-side{display:grid;gap:16px;}
+.jfg-mini{display:grid;grid-template-columns:118px 1fr;gap:14px;background:#fff;border:1px solid var(--jfg-line);border-radius:14px;overflow:hidden;transition:.25s;padding:0;}
+.jfg-mini:hover{transform:translateX(4px);box-shadow:var(--jfg-shadow);border-color:var(--jfg-sky);}
+.jfg-mini .jfg-thumb{border-radius:0;}
+.jfg-mini .jfg-thumb img{aspect-ratio:16/11;height:100%;}
+.jfg-mini-body{padding:12px 14px 12px 0;display:flex;flex-direction:column;justify-content:center;}
+.jfg-mini-body h4{font-size:14.5px;color:var(--jfg-navy-deep);line-height:1.45;margin-bottom:6px;}
+.jfg-mini-body span{font-size:12px;color:#8b9aa8;}
+
+/* ===== 视频流 ===== */
+.jfg-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px;}
+.jfg-filter{
+  padding:7px 18px;border-radius:999px;font-size:13.5px;font-weight:600;
+  border:1px solid var(--jfg-line);color:#4a5a6a;background:#fff;transition:.2s;
+}
+.jfg-filter:hover{border-color:var(--jfg-navy);color:var(--jfg-navy);}
+.jfg-filter.is-active{background:var(--jfg-navy);color:#fff;border-color:var(--jfg-navy);}
+.jfg-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.jfg-video-card{display:flex;flex-direction:column;}
+.jfg-video-card .jfg-card-body{flex:1;display:flex;flex-direction:column;}
+.jfg-video-card .jfg-card-body p{flex:1;}
+
+/* ===== 专题 ===== */
+.jfg-topic-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;}
+.jfg-topic{
+  grid-column:span 2;position:relative;border-radius:18px;overflow:hidden;
+  min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:24px;color:#fff;transition:.3s;box-shadow:var(--jfg-shadow);
+}
+.jfg-topic:nth-child(1),.jfg-topic:nth-child(2){grid-column:span 3;min-height:300px;}
+.jfg-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.6s;}
+.jfg-topic::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(14,28,43,.05) 25%,rgba(14,28,43,.85));
+}
+.jfg-topic:hover img{transform:scale(1.06);}
+.jfg-topic:hover{transform:translateY(-5px);}
+.jfg-topic-inner{position:relative;z-index:2;}
+.jfg-topic-state{
+  display:inline-block;font-size:11.5px;font-weight:800;
+  background:var(--jfg-amber);color:var(--jfg-navy-deep);
+  padding:3px 11px;border-radius:999px;margin-bottom:12px;letter-spacing:.05em;
+}
+.jfg-topic h3{font-size:20px;margin-bottom:8px;line-height:1.4;}
+.jfg-topic p{font-size:13px;color:#d7e3ee;line-height:1.7;}
+
+/* ===== 创作者 ===== */
+.jfg-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.jfg-creator{
+  background:#fff;border:1px solid var(--jfg-line);border-radius:var(--jfg-radius);
+  padding:26px 22px;text-align:center;transition:.3s;position:relative;overflow:hidden;
+}
+.jfg-creator::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--jfg-navy),var(--jfg-amber));opacity:0;transition:.3s;
+}
+.jfg-creator:hover{transform:translateY(-6px);box-shadow:var(--jfg-shadow-hover);}
+.jfg-creator:hover::before{opacity:1;}
+.jfg-creator-avatar{
+  width:66px;height:66px;border-radius:22px;margin:0 auto 14px;
+  display:grid;place-items:center;font-size:24px;font-weight:900;color:#fff;
+  box-shadow:0 10px 22px rgba(20,40,63,.18);
+}
+.jfg-creator h3{font-size:16.5px;color:var(--jfg-navy-deep);margin-bottom:5px;}
+.jfg-creator-role{font-size:12.5px;color:var(--jfg-amber-deep);font-weight:700;margin-bottom:11px;letter-spacing:.04em;}
+.jfg-creator-desc{font-size:13px;color:var(--jfg-gray);line-height:1.7;min-height:66px;}
+.jfg-creator-stats{display:flex;justify-content:center;gap:20px;margin-top:14px;padding-top:14px;border-top:1px solid var(--jfg-mist);}
+.jfg-creator-stats b{display:block;font-size:15px;color:var(--jfg-navy-deep);}
+.jfg-creator-stats span{font-size:11.5px;color:#8b9aa8;}
+.jfg-creator-more{
+  margin-top:16px;font-size:12.5px;color:var(--jfg-navy);font-weight:700;
+  border-bottom:1px solid transparent;
+}
+.jfg-creator-more:hover{border-bottom-color:var(--jfg-amber);}
+
+/* ===== 故事随笔 ===== */
+.jfg-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.jfg-story{
+  background:#fff;border-radius:var(--jfg-radius);padding:28px 26px;
+  border:1px solid var(--jfg-line);transition:.3s;display:flex;flex-direction:column;
+}
+.jfg-story:hover{transform:translateY(-5px);box-shadow:var(--jfg-shadow);border-color:var(--jfg-amber);}
+.jfg-story-no{
+  font-size:34px;font-weight:900;color:var(--jfg-sky);line-height:1;
+  margin-bottom:14px;letter-spacing:-.02em;
+}
+.jfg-story h3{font-size:17px;color:var(--jfg-navy-deep);margin-bottom:11px;line-height:1.5;}
+.jfg-story p{font-size:13.8px;color:var(--jfg-gray);line-height:1.85;flex:1;}
+.jfg-story-foot{margin-top:18px;display:flex;align-items:center;gap:9px;font-size:12.5px;color:#8b9aa8;}
+
+/* ===== 评价 ===== */
+.jfg-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.jfg-review{
+  background:#fff;border-radius:14px;padding:22px;border:1px solid var(--jfg-line);
+  transition:.25s;position:relative;
+}
+.jfg-review:hover{transform:translateY(-4px);box-shadow:var(--jfg-shadow);}
+.jfg-review::before{
+  content:"“";position:absolute;right:18px;top:6px;
+  font-size:54px;color:var(--jfg-sky);font-family:Georgia,serif;line-height:1;
+}
+.jfg-review-head{display:flex;align-items:center;gap:11px;margin-bottom:12px;}
+.jfg-review-head b{font-size:14px;color:var(--jfg-navy-deep);display:block;}
+.jfg-review-head small{font-size:11.5px;color:#8b9aa8;}
+.jfg-review p{font-size:13.8px;color:#4a5a6a;line-height:1.8;}
+.jfg-review-stars{margin-top:12px;color:var(--jfg-amber-deep);font-size:13px;letter-spacing:2px;}
+
+/* ===== 品牌动态 / 时间线 ===== */
+.jfg-news-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start;}
+.jfg-timeline{position:relative;padding-left:28px;}
+.jfg-timeline::before{
+  content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--jfg-amber),var(--jfg-sky));
+}
+.jfg-timeline-item{position:relative;padding-bottom:26px;}
+.jfg-timeline-item:last-child{padding-bottom:0;}
+.jfg-timeline-item::before{
+  content:"";position:absolute;left:-27px;top:6px;width:12px;height:12px;
+  border-radius:50%;background:#fff;border:3px solid var(--jfg-amber);
+  box-shadow:0 0 0 4px rgba(246,179,82,.18);
+}
+.jfg-timeline-date{font-size:12.5px;color:var(--jfg-amber-deep);font-weight:700;letter-spacing:.05em;margin-bottom:5px;}
+.jfg-timeline-item h3{font-size:15.5px;color:var(--jfg-navy-deep);margin-bottom:6px;}
+.jfg-timeline-item p{font-size:13.5px;color:var(--jfg-gray);line-height:1.75;}
+.jfg-partner-wall{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.jfg-partner{
+  background:#fff;border:1px solid var(--jfg-line);border-radius:12px;
+  padding:18px 12px;text-align:center;font-size:13.5px;font-weight:700;
+  color:#4a5a6a;transition:.25s;
+}
+.jfg-partner:hover{border-color:var(--jfg-amber);color:var(--jfg-navy);transform:translateY(-3px);}
+.jfg-partner small{display:block;font-weight:500;font-size:11.5px;color:#93a2b1;margin-top:3px;}
+
+/* ===== FAQ ===== */
+.jfg-faq{max-width:860px;margin:0 auto;}
+.jfg-faq details{
+  background:#fff;border:1px solid var(--jfg-line);border-radius:12px;
+  margin-bottom:12px;overflow:hidden;transition:.25s;
+}
+.jfg-faq details[open]{border-color:var(--jfg-amber);box-shadow:var(--jfg-shadow);}
+.jfg-faq summary{
+  cursor:pointer;padding:17px 22px;font-size:15px;font-weight:700;
+  color:var(--jfg-navy-deep);list-style:none;display:flex;justify-content:space-between;
+  align-items:center;gap:14px;
+}
+.jfg-faq summary::-webkit-details-marker{display:none;}
+.jfg-faq summary::after{
+  content:"+";font-size:20px;color:var(--jfg-amber-deep);font-weight:400;
+  transition:.25s;flex-shrink:0;
+}
+.jfg-faq details[open] summary::after{transform:rotate(45deg);}
+.jfg-faq .jfg-faq-answer{padding:0 22px 18px;font-size:14px;color:var(--jfg-gray);line-height:1.85;}
+
+/* ===== 投稿/联系 CTA ===== */
+.jfg-cta{
+  background:
+    radial-gradient(700px 300px at 90% 0%,rgba(246,179,82,.28),transparent 60%),
+    linear-gradient(135deg,var(--jfg-navy-deep),#24466f 60%,#2e5a8c);
+  border-radius:24px;padding:52px 48px;color:#fff;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center;
+  position:relative;overflow:hidden;
+}
+.jfg-cta::before{
+  content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;
+  border-radius:50%;border:28px solid rgba(255,255,255,.06);
+}
+.jfg-cta h2{font-size:clamp(22px,2.8vw,30px);color:#fff;margin-bottom:12px;line-height:1.4;}
+.jfg-cta p{font-size:14.5px;color:#c9dcee;max-width:520px;}
+.jfg-cta-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+.jfg-cta-side{position:relative;z-index:2;display:grid;gap:12px;}
+.jfg-cta-side .jfg-cta-info{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+  border-radius:12px;padding:13px 17px;font-size:13px;color:#dce9f6;
+}
+.jfg-cta-side .jfg-cta-info b{display:block;color:#fff;font-size:14px;margin-bottom:2px;}
+
+/* ===== 页脚 ===== */
+.jfg-footer{background:#0f1f31;color:#a9bccd;padding:64px 0 26px;font-size:13.5px;}
+.jfg-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.09);}
+.jfg-footer-brand .jfg-logo-text b{color:#fff;}
+.jfg-footer-brand .jfg-logo-text i{color:#7f97ac;}
+.jfg-footer-brand p{margin-top:16px;line-height:1.85;color:#90a6ba;max-width:300px;}
+.jfg-footer h4{color:#fff;font-size:14.5px;margin-bottom:16px;letter-spacing:.04em;}
+.jfg-footer li{margin-bottom:10px;}
+.jfg-footer li a{color:#a9bccd;transition:.2s;}
+.jfg-footer li a:hover{color:var(--jfg-amber);}
+.jfg-footer-bottom{
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding-top:22px;font-size:12.5px;color:#7f97ac;
+}
+.jfg-footer-bottom span{display:inline-block;}
+.jfg-backtop{
+  position:fixed;right:24px;bottom:26px;z-index:99;
+  width:46px;height:46px;border-radius:14px;background:var(--jfg-navy);
+  color:#fff;display:grid;place-items:center;font-size:18px;
+  box-shadow:0 12px 26px rgba(20,40,63,.35);
+  opacity:0;visibility:hidden;transform:translateY(14px);transition:.3s;
+}
+.jfg-backtop.is-show{opacity:1;visibility:visible;transform:translateY(0);}
+.jfg-backtop:hover{background:var(--jfg-amber-deep);}
+.jfg-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+  background:var(--jfg-navy-deep);color:#fff;padding:11px 24px;border-radius:999px;
+  font-size:13.5px;z-index:300;opacity:0;visibility:hidden;transition:.3s;
+  box-shadow:0 14px 34px rgba(20,40,63,.4);white-space:nowrap;
+}
+.jfg-toast.is-show{opacity:1;visibility:visible;transform:translate(-50%,0);}
+.jfg-modal-mask{
+  position:fixed;inset:0;background:rgba(14,28,43,.62);z-index:200;
+  display:none;align-items:center;justify-content:center;padding:20px;
+  backdrop-filter:blur(3px);
+}
+.jfg-modal-mask.is-open{display:flex;}
+.jfg-modal{
+  background:#fff;border-radius:18px;width:min(520px,100%);
+  padding:30px 28px;box-shadow:0 30px 70px rgba(0,0,0,.35);
+  max-height:86vh;overflow:auto;
+}
+.jfg-modal h3{font-size:19px;color:var(--jfg-navy-deep);margin-bottom:8px;}
+.jfg-modal .jfg-modal-sub{font-size:13.5px;color:var(--jfg-gray);margin-bottom:20px;}
+.jfg-modal label{display:block;font-size:13px;font-weight:700;color:#3b4a5a;margin-bottom:6px;margin-top:14px;}
+.jfg-modal input,.jfg-modal textarea,.jfg-modal select{
+  width:100%;border:1px solid var(--jfg-line);border-radius:10px;
+  padding:10px 13px;font-size:14px;font-family:inherit;outline:none;transition:.2s;background:#fbfdff;
+}
+.jfg-modal input:focus,.jfg-modal textarea:focus,.jfg-modal select:focus{border-color:var(--jfg-amber);box-shadow:0 0 0 3px rgba(246,179,82,.2);}
+.jfg-modal textarea{resize:vertical;min-height:88px;}
+.jfg-modal-actions{display:flex;gap:12px;margin-top:22px;}
+.jfg-modal-actions .jfg-btn{flex:1;}
+.jfg-modal-close{
+  position:absolute;right:18px;top:14px;font-size:24px;color:#93a2b1;line-height:1;
+}
+.jfg-modal-wrap{position:relative;}
+.jfg-share-row{display:flex;gap:12px;margin-top:8px;flex-wrap:wrap;}
+.jfg-share-row button{
+  flex:1;min-width:100px;padding:12px;border-radius:12px;font-size:13.5px;font-weight:700;
+  border:1px solid var(--jfg-line);transition:.2s;background:#fff;
+}
+.jfg-share-row button:hover{border-color:var(--jfg-amber);color:var(--jfg-amber-deep);background:#fff8ee;}
+.jfg-search-result{
+  grid-column:1 / -1;font-size:13.5px;color:var(--jfg-amber-deep);font-weight:700;
+  display:none;
+}
+.jfg-search-result.is-show{display:block;}
+.jfg-noresult{grid-column:1 / -1;text-align:center;color:var(--jfg-gray);font-size:14px;padding:30px 0;display:none;}
+.jfg-noresult.is-show{display:block;}
+
+@media(max-width:1024px){
+  .jfg-nav{display:none;}
+  .jfg-burger{display:flex;}
+  .jfg-hero-grid{grid-template-columns:1fr;gap:40px;}
+  .jfg-about-grid{grid-template-columns:1fr;gap:34px;}
+  .jfg-about-aside{position:static;}
+  .jfg-feature-grid{grid-template-columns:1fr;}
+  .jfg-video-grid{grid-template-columns:repeat(2,1fr);}
+  .jfg-topic-grid{grid-template-columns:repeat(2,1fr);}
+  .jfg-topic,.jfg-topic:nth-child(1),.jfg-topic:nth-child(2){grid-column:span 1;min-height:240px;}
+  .jfg-creator-grid{grid-template-columns:repeat(2,1fr);}
+  .jfg-story-grid{grid-template-columns:1fr;}
+  .jfg-review-grid{grid-template-columns:repeat(2,1fr);}
+  .jfg-news-grid{grid-template-columns:1fr;gap:34px;}
+  .jfg-cta{grid-template-columns:1fr;padding:40px 30px;}
+  .jfg-footer-grid{grid-template-columns:1fr 1fr;gap:30px;}
+}
+@media(max-width:680px){
+  .jfg-section{padding:58px 0;}
+  .jfg-search{display:none;}
+  .jfg-header-tools .jfg-btn--primary{display:none;}
+  .jfg-hero{padding:46px 0 60px;}
+  .jfg-hero-stats{gap:24px;}
+  .jfg-video-grid{grid-template-columns:1fr;}
+  .jfg-topic-grid{grid-template-columns:1fr;}
+  .jfg-creator-grid{grid-template-columns:1fr;}
+  .jfg-review-grid{grid-template-columns:1fr;}
+  .jfg-partner-wall{grid-template-columns:repeat(2,1fr);}
+  .jfg-footer-grid{grid-template-columns:1fr;}
+  .jfg-announce-text{white-space:normal;}
+  .jfg-hero-float{left:0;top:8px;}
+  .jfg-hero-badge{right:0;bottom:10px;}
+  .jfg-cta{padding:32px 22px;}
+  .jfg-copy-tip{display:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="jfg-sticky-wrap" id="jfgSticky">
+  <div class="jfg-announce">
+    <div class="jfg-container">
+      <span class="jfg-announce-badge">官方发布</span>
+      <span class="jfg-announce-text">集方阁云 2026 冬季影像企划《四方一阁》正式上线，首批 12 支原创短片已入库，社区投稿通道同步开启。</span>
+      <a href="#jfgTopics">查看企划 →</a>
+    </div>
+  </div>
+  <header class="jfg-header">
+    <div class="jfg-container jfg-header-inner">
+      <a href="#jfgHome" class="jfg-logo" aria-label="集方阁云官方网站首页">
+        <span class="jfg-logo-mark"><span></span><span></span><span></span></span>
+        <span class="jfg-logo-text"><b>集方阁云</b><i>JIFANGGE CLOUD</i></span>
+      </a>
+      <nav class="jfg-nav" aria-label="主导航">
+        <a href="#jfgHome">首页</a>
+        <a href="#jfgFeature">视频焦点</a>
+        <a href="#jfgTopics">专题企划</a>
+        <a href="#jfgCreators">创作者</a>
+        <a href="#jfgNews">企业动态</a>
+        <a href="#jfgFaq">帮助</a>
+        <a href="#jfgContact">联系</a>
+      </nav>
+      <div class="jfg-header-tools">
+        <form class="jfg-search" id="jfgSearchForm" onsubmit="return false;">
+          <input type="text" id="jfgSearchInput" placeholder="搜索影像、创作者、专题" aria-label="站内搜索">
+          <button type="submit" aria-label="搜索">⌕</button>
+        </form>
+        <button class="jfg-btn jfg-btn--primary" data-jfg-modal="submit">我要投稿</button>
+        <button class="jfg-burger" id="jfgBurger" aria-label="展开导航" aria-expanded="false">
+          <i></i><i></i><i></i>
+        </button>
+      </div>
+    </div>
+    <div class="jfg-mobile-nav" id="jfgMobileNav">
+      <a href="#jfgHome">首页</a>
+      <a href="#jfgFeature">视频焦点</a>
+      <a href="#jfgTopics">专题企划</a>
+      <a href="#jfgCreators">创作者</a>
+      <a href="#jfgNews">企业动态</a>
+      <a href="#jfgFaq">帮助</a>
+      <a href="#jfgContact">联系</a>
+    </div>
+  </header>
+</div>
+
+<main id="jfgHome">
+
+  <!-- 首屏 -->
+  <section class="jfg-hero">
+    <div class="jfg-container jfg-hero-grid">
+      <div>
+        <span class="jfg-hero-tag"><i></i>集方阁云官方网站 · 品牌视频门户</span>
+        <h1>集方阁云</h1>
+        <p class="jfg-hero-lead">四方影像，一阁云集 —— 让每一段真实记录都有被看见的力量。</p>
+        <p class="jfg-hero-desc">集方阁云是一家持续运营的影像内容品牌企业，以官网为入口，连接原创创作者、行业观察者与普通记录者，围绕城市探索、生活方式、人物访谈与创作幕后，构建专业、正版、高清的视频内容生态。我们相信，好的影像来自真实的日常，也来自被认真对待的表达。</p>
+        <div class="jfg-hero-actions">
+          <a class="jfg-btn jfg-btn--primary" href="#jfgFeature">进入视频焦点</a>
+          <a class="jfg-btn jfg-btn--line" href="#jfgTopics">浏览专题企划</a>
+        </div>
+        <div class="jfg-hero-stats">
+          <div class="jfg-stat"><b data-jfg-count="2860">2860</b><span>原创内容入库（支）</span></div>
+          <div class="jfg-stat"><b data-jfg-count="412">412</b><span>合作创作者（位）</span></div>
+          <div class="jfg-stat"><b data-jfg-count="96">96</b><span>深度专题企划（期）</span></div>
+        </div>
+      </div>
+      <div class="jfg-hero-visual">
+        <div class="jfg-hero-float">本月新增 <b>63</b> 支作品</div>
+        <div class="jfg-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%231f3a5f'/%3E%3Cstop offset='1' stop-color='%232e5a8c'/%3E%3C/linearGradient%3E%3ClinearGradient id='sun' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f6b352'/%3E%3Cstop offset='1' stop-color='%23e0912b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23sky)'/%3E%3Ccircle cx='620' cy='150' r='70' fill='url(%23sun)' opacity='.9'/%3E%3Cpath d='M0 380 L140 300 L280 350 L420 260 L560 330 L700 240 L800 300 L800 500 L0 500 Z' fill='%23dce7f2' opacity='.18'/%3E%3Cpath d='M0 430 L160 370 L320 410 L480 350 L640 400 L800 340 L800 500 L0 500 Z' fill='%23dce7f2' opacity='.12'/%3E%3Cg fill='%23ffffff' opacity='.9'%3E%3Crect x='80' y='90' width='90' height='4' rx='2'/%3E%3Crect x='80' y='108' width='150' height='4' rx='2' opacity='.6'/%3E%3Crect x='80' y='126' width='60' height='4' rx='2' opacity='.4'/%3E%3C/g%3E%3Cpath d='M80 170 l0 40 M70 180 l10 -10 l10 10' stroke='%23f6b352' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="集方阁云品牌首屏影像：暮色下的四方山阁轮廓">
+          <div class="jfg-hero-play"><span></span></div>
+        </div>
+        <div class="jfg-hero-badge"><i>阁</i><div>官方精选专题<small>四方一阁 · 冬季影像</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析长文 -->
+  <section class="jfg-section jfg-about" id="jfgAbout">
+    <div class="jfg-container jfg-about-grid">
+      <aside class="jfg-about-aside">
+        <div class="jfg-about-card">
+          <h3>关于集方阁云</h3>
+          <p>以“集”为方法，以“方阁”为空间，以“云”为传播方式，我们把分散在四方的生活影像收拢成一座可被检索、可被理解的云端影像之阁。</p>
+          <ul>
+            <li>企业级内容审核与分级制度</li>
+            <li>原创创作者扶持与分成计划</li>
+            <li>高清正版素材库与授权体系</li>
+            <li>品牌方与创作者协同企划机制</li>
+          </ul>
+          <div class="jfg-about-tags">
+            <span>原创</span><span>正版</span><span>高清</span><span>社区</span><span>内容生态</span><span>匠心</span>
+          </div>
+        </div>
+      </aside>
+      <div class="jfg-about-body">
+        <span class="jfg-eyebrow">关键词定位与解析</span>
+        <h2 class="jfg-h2">集方阁云：一座为真实影像而建的云端之阁</h2>
+        <p><strong>“集”</strong>是汇聚，也是整理。集方阁云从创立之初就坚持一个朴素判断：影像内容的价值不在于数量，而在于它是否被妥当地归类、被认真地观看、被长期地保存。因此我们没有把自己定位成一个单纯的视频聚合页面，而是一个带有编辑意识的品牌官网——每一条入库内容都要经过选题、审核、标签梳理与专题归档四道工序。</p>
+        <p><strong>“方阁”</strong>是空间，也是方法。四方之地，各有一阁；每一阁里存放着一类人的经验与记忆。我们围绕城市探索、日常记录、人物访谈、创作幕后、兴趣同好等方向，建立了常设的专题架构。观众进入集方阁云，可以按城市进入，也可以按生活方式进入，更可以按创作者进入，找到与自己经验相连的那一间“阁”。</p>
+        <p><strong>“云”</strong>是传播，也是连接。作为持续运营的视频品牌平台，我们为创作者提供投稿入口、创作灵感与实用工具，为企业与合作方提供品牌企划与内容定制服务，为普通观众提供稳定、清晰、可检索的观看体验。我们不追逐短期热度，更看重内容在半年、一年之后是否仍然值得被点开。</p>
+        <div class="jfg-about-quote">影像不是流量的容器，而是经验的容器。集方阁云愿意做那个耐心的整理者。</div>
+        <p>在行业观察层面，集方阁云长期关注中小创作者的真实处境：设备有限、时间有限、表达欲望却很强烈。我们为此设计了轻量投稿通道与创作灵感支持，帮助创作者把“想拍”变成“拍完”，把“拍完”变成“被看见”。过去一年，共有 412 位合作创作者在平台发布了原创作品，其中超过六成是首次进入正式影像企划的新面孔。</p>
+        <p>在社区层面，我们强调多元与包容。集方阁云的评论区不追求整齐划一的好评，而鼓励有细节、有观点的交流；我们设有专门的反馈通道，读者可以指出内容中的事实偏差，也可以建议新的选题方向。用户至上是这个品牌最基础的承诺，它体现在加载速度、播放清晰度，也体现在每一条被认真回复的留言里。</p>
+        <div class="jfg-about-divider"></div>
+        <p>面向未来，集方阁云将继续深耕垂直领域，围绕“四方影像计划”逐年扩充内容库，并开放更多与企业、机构、独立工作室的联合企划。我们希望这座云端之阁既能承载专业创作者的作品，也能容纳普通人第一次举起手机记录生活的勇气。力量不一定宏大，真实本身就足够动人。这正是集方阁云持续运营的意义所在。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频焦点 -->
+  <section class="jfg-section jfg-section--alt" id="jfgFeature">
+    <div class="jfg-container">
+      <div class="jfg-section-head">
+        <span class="jfg-eyebrow">视频焦点</span>
+        <h2 class="jfg-h2">本期编辑推荐：值得完整看完的六支影像</h2>
+        <p>由集方阁云编辑部从近两个月的入库内容中挑选，覆盖城市探索、人物访谈与创作幕后三个方向，每一支都附带创作者的手记说明。</p>
+      </div>
+      <div class="jfg-feature-grid">
+        <article class="jfg-card jfg-feature-main">
+          <div class="jfg-thumb">
+            <img class="jfg-cover" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23223f63'/%3E%3Cstop offset='1' stop-color='%234b7ca8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23a1)'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.22' stroke-width='2'%3E%3Cpath d='M0 340 L120 300 L240 330 L360 280 L480 320 L600 270 L720 310 L800 290' fill='none'/%3E%3Cpath d='M0 380 L140 350 L300 370 L460 330 L620 360 L800 330' fill='none' opacity='.6'/%3E%3C/g%3E%3Cg fill='%23f6b352'%3E%3Crect x='90' y='90' width='54' height='54' rx='8'/%3E%3Crect x='160' y='90' width='54' height='54' rx='8' opacity='.7'/%3E%3Crect x='230' y='90' width='54' height='54' rx='8' opacity='.45'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.85'%3E%3Crect x='90' y='176' width='220' height='6' rx='3'/%3E%3Crect x='90' y='196' width='150' height='6' rx='3' opacity='.6'/%3E%3C/g%3E%3Ccircle cx='660' cy='120' r='46' fill='none' stroke='%23f6b352' stroke-width='3' opacity='.8'/%3E%3C/svg%3E" alt="专题影像《四方一阁》主视觉：蓝色山脊与金色方格">
+            <div class="jfg-thumb-overlay"></div>
+            <span class="jfg-thumb-tag">官方企划</span>
+            <div class="jfg-thumb-play"><span></span></div>
+            <span class="jfg-thumb-dur">18:42</span>
+          </div>
+          <div class="jfg-card-body">
+            <h3>《四方一阁》第一集：在旧城阁楼上，记录一次完整的日落</h3>
+            <p>创作者用三台机位、两小时固定拍摄，记录下老城阁楼从午后到入夜的完整光影变化，并穿插了居住者关于“留下来”与“搬出去”的两段对话。全片无旁白，靠环境声与字幕完成叙事，是本期最具耐心的作品。</p>
+            <div class="jfg-meta">
+              <span class="jfg-avatar jfg-avatar--a">林</span>
+              <span class="jfg-meta-name">林间放映室</span><span class="jfg-meta-dot"></span>
+              <span class="jfg-meta-sub">城市探索 · 6.8 万次观看</span>
+            </div>
+            <div class="jfg-card-foot">
+              <div class="jfg-actions">
+                <button class="jfg-action" data-jfg-like>♡ 点赞 <b>1240</b></button>
+                <button class="jfg-action" data-jfg-save>☆ 收藏</button>
+                <button class="jfg-action" data-jfg-share>↗ 分享</button>
+              </div>
+              <a class="jfg-btn jfg-btn--amber" href="#jfgTopics" style="padding:7px 18px;font-size:13px;">进入企划</a>
+            </div>
+          </div>
+        </article>
+        <div class="jfg-feature-side">
+          <article class="jfg-mini">
+            <div class="jfg-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%23eef3f8'/%3E%3Ccircle cx='200' cy='120' r='64' fill='%233f7fd4' opacity='.85'/%3E%3Ccircle cx='238' cy='96' r='26' fill='%23f6b352'/%3E%3Cpath d='M0 240 Q100 200 200 232 T400 210 L400 280 L0 280 Z' fill='%231f3a5f' opacity='.18'/%3E%3Cg fill='%231f3a5f'%3E%3Crect x='40' y='46' width='120' height='6' rx='3' opacity='.7'/%3E%3Crect x='40' y='62' width='76' height='6' rx='3' opacity='.4'/%3E%3C/g%3E%3C/svg%3E" alt="创作者访谈影像封面：蓝色圆形人物剪影与暖色光点">
+            </div>
+            <div class="jfg-mini-body">
+              <h4>访谈：拍了七年街巷，他开始拍自己的家人</h4>
+              <span>人物访谈 · 12:08 · 3.2 万次观看</span>
+            </div>
+          </article>
+          <article class="jfg-mini">
+            <div class="jfg-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%232c3f34'/%3E%3Cg stroke='%2390c9a0' stroke-width='3' fill='none'%3E%3Cpath d='M60 220 Q120 150 180 190 T320 160'/%3E%3Cpath d='M60 180 Q130 120 200 150 T330 120' opacity='.5'/%3E%3C/g%3E%3Ccircle cx='300' cy='80' r='34' fill='%23f6b352' opacity='.8'/%3E%3Cg fill='%23ffffff' opacity='.75'%3E%3Crect x='56' y='56' width='96' height='5' rx='2.5'/%3E%3Crect x='56' y='70' width='60' height='5' rx='2.5' opacity='.6'/%3E%3C/g%3E%3C/svg%3E" alt="自然记录影像封面：深绿背景与手绘山径线条">
+            </div>
+            <div class="jfg-mini-body">
+              <h4>山径手记：一条少有人走的路线与它的四季</h4>
+              <span>户外活动 · 09:35 · 2.4 万次观看</span>
+            </div>
+          </article>
+          <article class="jfg-mini">
+            <div class="jfg-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%23f3e8d8'/%3E%3Cg fill='%23a06bc4' opacity='.8'%3E%3Ccircle cx='140' cy='120' r='50'/%3E%3Ccircle cx='250' cy='160' r='38' opacity='.6'/%3E%3C/g%3E%3Cpath d='M0 236 L120 210 L240 238 L360 204 L400 214 L400 280 L0 280 Z' fill='%231f3a5f' opacity='.14'/%3E%3Cg fill='%233b4a5a'%3E%3Crect x='38' y='42' width='140' height='6' rx='3' opacity='.55'/%3E%3C/g%3E%3C/svg%3E" alt="手作影像封面：米色背景与紫色圆形构图">
+            </div>
+            <div class="jfg-mini-body">
+              <h4>创作幕后：一支手作短片是如何被剪出来的</h4>
+              <span>创作幕后 · 15:20 · 1.9 万次观看</span>
+            </div>
+          </article>
+          <article class="jfg-mini">
+            <div class="jfg-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%231f2b38'/%3E%3Cg stroke='%23f6b352' stroke-width='2' fill='none' opacity='.9'%3E%3Crect x='70' y='70' width='110' height='70' rx='6'/%3E%3Crect x='200' y='100' width='120' height='80' rx='6'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='2' opacity='.35' fill='none'%3E%3Cpath d='M70 180 L300 200'/%3E%3Cpath d='M110 60 L110 40'/%3E%3C/g%3E%3Ccircle cx='320' cy='60' r='18' fill='%234b7ca8'/%3E%3C/svg%3E" alt="科技前沿影像封面：深色界面与橙色分镜框">
+            </div>
+            <div class="jfg-mini-body">
+              <h4>工具实测：三款剪辑软件在低配设备上的真实表现</h4>
+              <span>深度测评 · 11:44 · 4.1 万次观看</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="jfg-section" id="jfgVideos">
+    <div class="jfg-container">
+      <div class="jfg-section-head">
+        <span class="jfg-eyebrow">社区热门</span>
+        <h2 class="jfg-h2">本周热门视频流：来自创作者的真实记录</h2>
+        <p>按标签筛选你想看的方向，所有内容均为集方阁云官方审核入库的原创作品。</p>
+      </div>
+      <div class="jfg-filters" id="jfgFilters">
+        <button class="jfg-filter is-active" data-jfg-filter="all">全部</button>
+        <button class="jfg-filter" data-jfg-filter="城市">城市探索</button>
+        <button class="jfg-filter" data-jfg-filter="生活">生活方式</button>
+        <button class="jfg-filter" data-jfg-filter="访谈">人物访谈</button>
+        <button class="jfg-filter" data-jfg-filter="幕后">创作幕后</button>
+        <button class="jfg-filter" data-jfg-filter="技巧">实用技巧</button>
+      </div>
+      <div class="jfg-search-result" id="jfgSearchResult"></div>
+      <div class="jfg-video-grid" id="jfgVideoGrid">
+
+        <article class="jfg-card jfg-video-card" data-jfg-cat="城市">
+          <div class="jfg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%232b4a6f'/%3E%3Cg fill='%234b7ca8' opacity='.55'%3E%3Crect x='40' y='120' width='52' height='150'/%3E%3Crect x='104' y='90' width='44' height='180'/%3E%3Crect x='160' y='140' width='60' height='130'/%3E%3Crect x='232' y='70' width='50' height='200'/%3E%3Crect x='294' y='120' width='46' height='150'/%3E%3Crect x='352' y='100' width='58' height='170'/%3E%3C/g%3E%3Ccircle cx='400' cy='56' r='24' fill='%23f6b352'/%3E%3Cg fill='%23ffffff' opacity='.7'%3E%3Crect x='40' y='40' width='130' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="城市探索影像封面：蓝调楼群剪影与暖色圆月">
+            <div class="jfg-thumb-overlay"></div>
+            <span class="jfg-thumb-tag">城市探索</span>
+            <div class="jfg-thumb-play"><span></span></div>
+            <span class="jfg-thumb-dur">10:26</span>
+          </div>
+          <div class="jfg-card-body">
+            <h3>天桥下的早市：五点四十分的第一锅汤</h3>
+            <p>跟着摊主老周走完一个完整清晨，从备料到收摊，记录城市里最踏实的一段烟火时间。</p>
+            <div class="jfg-meta">
+              <span class="jfg-avatar jfg-avatar--b">周</span>
+              <span class="jfg-meta-name">早市观察员</span><span class="jfg-meta-dot"></span>
+              <span class="jfg-meta-sub">8.6 万次观看</span>
+            </div>
+            <div class="jfg-card-foot">
+              <div class="jfg-actions">
+                <button class="jfg-action" data-jfg-like>♡ <b>986</b></button>
+                <button class="jfg-action" data-jfg-save>☆</button>
+              </div>
+              <button class="jfg-action" data-jfg-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfg-card jfg-video-card" data-jfg-cat="生活">
+          <div class="jfg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f6ecd9'/%3E%3Ccircle cx='150' cy='130' r='58' fill='%23e0912b' opacity='.85'/%3E%3Ccircle cx='220' cy='150' r='40' fill='%23d4586f' opacity='.7'/%3E%3Cpath d='M0 220 Q120 190 240 214 T480 196 L480 270 L0 270 Z' fill='%23a06bc4' opacity='.3'/%3E%3Cg fill='%233b4a5a'%3E%3Crect x='36' y='40' width='150' height='6' rx='3' opacity='.6'/%3E%3Crect x='36' y='56' width='90' height='6' rx='3' opacity='.35'/%3E%3C/g%3E%3C/svg%3E" alt="生活方式影像封面：暖黄与玫色圆形构成的静物构图">
+            <div class="jfg-thumb-overlay"></div>
+            <span class="jfg-thumb-tag">生活方式</span>
+            <div class="jfg-thumb-play"><span></span></div>
+            <span class="jfg-thumb-dur">07:52</span>
+          </div>
+          <div class="jfg-card-body">
+            <h3>一个人住的第七年：我把厨房改成了工作台</h3>
+            <p>关于独居生活的一次坦诚复盘，不美化也不劝退，只展示真实的收纳、采买与时间安排。</p>
+            <div class="jfg-meta">
+              <span class="jfg-avatar jfg-avatar--e">苏</span>
+              <span class="jfg-meta-name">苏打水日常</span><span class="jfg-meta-dot"></span>
+              <span class="jfg-meta-sub">6.2 万次观看</span>
+            </div>
+            <div class="jfg-card-foot">
+              <div class="jfg-actions">
+                <button class="jfg-action" data-jfg-like>♡ <b>1420</b></button>
+                <button class="jfg-action" data-jfg-save>☆</button>
+              </div>
+              <button class="jfg-action" data-jfg-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfg-card jfg-video-card" data-jfg-cat="访谈">
+          <div class="jfg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23e7eef7'/%3E%3Ccircle cx='240' cy='112' r='52' fill='%231f3a5f' opacity='.85'/%3E%3Cpath d='M160 240 Q240 168 320 240 Z' fill='%231f3a5f' opacity='.5'/%3E%3Cg fill='%23f6b352'%3E%3Crect x='64' y='60' width='8' height='8' rx='2'/%3E%3Crect x='80' y='60' width='8' height='8' rx='2' opacity='.7'/%3E%3Crect x='96' y='60' width='8' height='8' rx='2' opacity='.45'/%3E%3C/g%3E%3Cg fill='%235d6b7a' opacity='.6'%3E%3Crect x='64' y='196' width='120' height='5' rx='2.5'/%3E%3Crect x='64' y='210' width='80' height='5' rx='2.5'/%3E%3C/g%3E%3C/svg%3E" alt="人物访谈影像封面：浅灰背景与深蓝人物剪影">
+            <div class="jfg-thumb-overlay"></div>
+            <span class="jfg-thumb-tag">人物访谈</span>
+            <div class="jfg-thumb-play"><span></span></div>
+            <span class="jfg-thumb-dur">22:14</span>
+          </div>
+          <div class="jfg-card-body">
+            <h3>与一位书店主理人聊了三个小时：关于留下来这件事</h3>
+            <p>从开店成本聊到邻里关系，从选书逻辑聊到为什么坚持不做咖啡。访谈完整保留，未做删改。</p>
+            <div class="jfg-meta">
+              <span class="jfg-avatar jfg-avatar--c">顾</span>
+              <span class="jfg-meta-name">阁楼访客</span><span class="jfg-meta-dot"></span>
+              <span class="jfg-meta-sub">5.4 万次观看</span>
+            </div>
+            <div class="jfg-card-foot">
+              <div class="jfg-actions">
+                <button class="jfg-action" data-jfg-like>♡ <b>760</b></button>
+                <button class="jfg-action" data-jfg-save>☆</button>
+              </div>
+              <button class="jfg-action" data-jfg-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfg-card jfg-video-card" data-jfg-cat="幕后">
+          <div class="jfg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%2316241d'/%3E%3Cg stroke='%233fbf8f' stroke-width='2' fill='none'%3E%3Crect x='60' y='80' width='110' height='62' rx='4'/%3E%3Crect x='60' y='156' width='110' height='62' rx='4' opacity='.6'/%3E%3Cpath d='M182 110 L240 110 L240 190'/%3E%3C/g%3E%3Cg fill='%23f6b352' opacity='.9'%3E%3Ccircle cx='300' cy='120' r='9'/%3E%3Ccircle cx='330' cy='150' r='9'/%3E%3Ccircle cx='360' cy='120' r='9'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.6'%3E%3Crect x='60' y='40' width='140' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="创作幕后影像封面：深绿背景与荧光分镜流程线">
+            <div class="jfg-thumb-overlay"></div>
+            <span class="jfg-thumb-tag">创作幕后</span>
+            <div class="jfg-thumb-play"><span></span></div>
+            <span class="jfg-thumb-dur">13:08</span>
+          </div>
+          <div class="jfg-card-body">
+            <h3>从零开始做一支城市短片：分镜、勘景与失败三次的夜拍</h3>
+            <p>完整展示一支八分钟短片的制作流程，包括被放弃的两版脚本与一次彻底重拍的决策过程。</p>
+            <div class="jfg-meta">
+              <span class="jfg-avatar jfg-avatar--d">闻</span>
+              <span class="jfg-meta-name">闻风工作室</span><span class="jfg-meta-dot"></span>
+              <span class="jfg-meta-sub">7.1 万次观看</span>
+            </div>
+            <div class="jfg-card-foot">
+              <div class="jfg-actions">
+                <button class="jfg-action" data-jfg-like>♡ <b>1105</b></button>
+                <button class="jfg-action" data-jfg-save>☆</button>
+              </div>
+              <button class="jfg-action" data-jfg-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfg-card jfg-video-card" data-jfg-cat="技巧">
+          <div class="jfg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23eef3f8'/%3E%3Cg stroke='%231f3a5f' stroke-width='2.5' fill='none' opacity='.8'%3E%3Cpath d='M70 200 L150 90 L230 200 Z'/%3E%3Cpath d='M210 200 L280 110 L350 200 Z' opacity='.5'/%3E%3C/g%3E%3Ccircle cx='380' cy='80' r='26' fill='%23f6b352'/%3E%3Cg fill='%235d6b7a' opacity='.7'%3E%3Crect x='70' y='36' width='120' height='6' rx='3'/%3E%3Crect x='70' y='52' width='72' height='6' rx='3' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="实用技巧影像封面：浅色背景与深蓝三角构图">
+            <div class="jfg-thumb-overlay"></div>
+            <span class="jfg-thumb-tag">实用技巧</span>
+            <div class="jfg-thumb-play"><span></span></div>
+            <span class="jfg-thumb-dur">08:47</span>
+          </div>
+          <div class="jfg-card-body">
+            <h3>手机也能拍好环境光：六个立刻能用的小调整</h3>
+            <p>不讲参数，只讲位置与角度。六个在室内外都能立刻尝试的调整方法，附实拍对比。</p>
+            <div class="jfg-meta">
+              <span class="jfg-avatar jfg-avatar--f">许</span>
+              <span class="jfg-meta-name">许工镜头</span><span class="jfg-meta-dot"></span>
+              <span class="jfg-meta-sub">9.3 万次观看</span>
+            </div>
+            <div class="jfg-card-foot">
+              <div class="jfg-actions">
+                <button class="jfg-action" data-jfg-like>♡ <b>1680</b></button>
+                <button class="jfg-action" data-jfg-save>☆</button>
+              </div>
+              <button class="jfg-action" data-jfg-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfg-card jfg-video-card" data-jfg-cat="城市">
+          <div class="jfg-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23dce7f2'/%3E%3Cpath d='M0 210 L110 150 L210 196 L320 140 L430 190 L480 168 L480 270 L0 270 Z' fill='%231f3a5f' opacity='.55'/%3E%3Cpath d='M0 236 L130 200 L260 226 L390 190 L480 212 L480 270 L0 270 Z' fill='%231f3a5f' opacity='.32'/%3E%3Ccircle cx='120' cy='74' r='30' fill='%23f6b352'/%3E%3Cg fill='%231f3a5f' opacity='.6'%3E%3Crect x='300' y='52' width='110' height='5' rx='2.5'/%3E%3Crect x='300' y='66' width='70' height='5' rx='2.5'/%3E%3C/g%3E%3C/svg%3E" alt="城市探索影像封面：浅蓝天空与层叠山城轮廓">
+            <div class="jfg-thumb-overlay"></div>
+            <span class="jfg-thumb-tag">城市探索</span>
+            <div class="jfg-thumb-play"><span></span></div>
+            <span class="jfg-thumb-dur">12:31</span>
+          </div>
+          <div class="jfg-card-body">
+            <h3>沿着一条公交线走完全程：从城北到江边的四十七站</h3>
+            <p>不剪辑跳跃，只用固定机位与下车后的行走片段，串起一条线路上的生活切片。</p>
+            <div class="jfg-meta">
+              <span class="jfg-avatar jfg-avatar--a">林</span>
+              <span class="jfg-meta-name">林间放映室</span><span class="jfg-meta-dot"></span>
+              <span class="jfg-meta-sub">5.9 万次观看</span>
+            </div>
+            <div class="jfg-card-foot">
+              <div class="jfg-actions">
+                <button class="jfg-action" data-jfg-like>♡ <b>842</b></button>
+                <button class="jfg-action" data-jfg-save>☆</button>
+              </div>
+              <button class="jfg-action" data-jfg-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="jfg-noresult" id="jfgNoResult">没有找到匹配的内容，试试其他关键词或切换标签。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="jfg-section jfg-section--alt" id="jfgTopics">
+    <div class="jfg-container">
+      <div class="jfg-section-head">
+        <span class="jfg-eyebrow">专题企划</span>
+        <h2 class="jfg-h2">四座城、四间阁：正在进行的长期影像企划</h2>
+        <p>集方阁云每年推出常设专题，以城市与生活方式为线索，持续更新，欢迎创作者围绕专题投稿。</p>
+      </div>
+      <div class="jfg-topic-grid">
+        <a class="jfg-topic" href="#jfgFeature">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 360'%3E%3Crect width='600' height='360' fill='%231f3a5f'/%3E%3Ccircle cx='440' cy='110' r='72' fill='%23f6b352' opacity='.85'/%3E%3Cg fill='%232e5a8c'%3E%3Crect x='60' y='190' width='70' height='170'/%3E%3Crect x='146' y='150' width='58' height='210'/%3E%3Crect x='220' y='210' width='80' height='150'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-opacity='.3' stroke-width='2' fill='none'%3E%3Cpath d='M60 150 L150 96 L240 150'/%3E%3C/g%3E%3C/svg%3E" alt="专题《四方一阁》封面：深蓝城市与琥珀色圆日">
+          <div class="jfg-topic-inner">
+            <span class="jfg-topic-state">持续更新</span>
+            <h3>四方一阁 · 冬季影像</h3>
+            <p>以“阁”为空间意象，记录四座城市里被保留下来的老建筑与居住其中的人，已更新 12 支。</p>
+          </div>
+        </a>
+        <a class="jfg-topic" href="#jfgVideos">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 360'%3E%3Crect width='600' height='360' fill='%23f6ecd9'/%3E%3Ccircle cx='180' cy='150' r='84' fill='%23e0912b' opacity='.8'/%3E%3Ccircle cx='320' cy='200' r='56' fill='%23d4586f' opacity='.6'/%3E%3Cpath d='M0 292 Q160 250 320 286 T600 260 L600 360 L0 360 Z' fill='%23a06bc4' opacity='.35'/%3E%3Cg fill='%233b4a5a' opacity='.6'%3E%3Crect x='400' y='60' width='130' height='6' rx='3'/%3E%3Crect x='400' y='78' width='80' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="专题《一日一阁》封面：暖米色背景与圆形静物构图">
+          <div class="jfg-topic-inner">
+            <span class="jfg-topic-state">征集中</span>
+            <h3>一日一阁 · 日常记录</h3>
+            <p>把镜头对准自己的一天，不设主题限制，只要求真实、完整、可被理解，已收录 86 支作品。</p>
+          </div>
+        </a>
+        <a class="jfg-topic" href="#jfgCreators">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 360'%3E%3Crect width='600' height='360' fill='%2316241d'/%3E%3Cg stroke='%233fbf8f' stroke-width='2.5' fill='none'%3E%3Cpath d='M60 280 Q180 170 300 230 T560 190'/%3E%3Cpath d='M60 240 Q190 140 320 190 T560 150' opacity='.55'/%3E%3C/g%3E%3Ccircle cx='480' cy='90' r='40' fill='%23f6b352' opacity='.85'/%3E%3Cg fill='%23ffffff' opacity='.7'%3E%3Crect x='56' y='52' width='140' height='6' rx='3'/%3E%3Crect x='56' y='70' width='84' height='6' rx='3' opacity='.6'/%3E%3C/g%3E%3C/svg%3E" alt="专题《山径与阁》封面：深绿背景与荧光山径线条">
+          <div class="jfg-topic-inner">
+            <span class="jfg-topic-state">已完结</span>
+            <h3>山径与阁 · 户外记录</h3>
+            <p>四季山径的影像合集，八位创作者、十四条路线、一整年的行走与拍摄记录，共 18 支。</p>
+          </div>
+        </a>
+        <a class="jfg-topic" href="#jfgNews">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 360'%3E%3Crect width='600' height='360' fill='%23e7eef7'/%3E%3Cg fill='%231f3a5f' opacity='.7'%3E%3Ccircle cx='200' cy='160' r='56'/%3E%3Ccircle cx='300' cy='180' r='40' opacity='.5'/%3E%3C/g%3E%3Cg stroke='%23f6b352' stroke-width='3' fill='none'%3E%3Crect x='380' y='110' width='120' height='80' rx='6'/%3E%3Cpath d='M400 230 L500 230'/%3E%3C/g%3E%3Cg fill='%235d6b7a' opacity='.6'%3E%3Crect x='60' y='52' width='150' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="专题《幕后七问》封面：浅灰背景与深蓝人物圆点">
+          <div class="jfg-topic-inner">
+            <span class="jfg-topic-state">更新至第 7 期</span>
+            <h3>幕后七问 · 创作访谈</h3>
+            <p>每期向一位创作者提七个问题，聚焦方法论与取舍，已访谈 7 位，累计阅读 12 万次。</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="jfg-section" id="jfgCreators">
+    <div class="jfg-container">
+      <div class="jfg-section-head">
+        <span class="jfg-eyebrow">创作者矩阵</span>
+        <h2 class="jfg-h2">与集方阁云一同成长的创作者</h2>
+        <p>他们来自不同城市与行业，共同点是愿意把镜头对准真实的生活，并持续更新。</p>
+      </div>
+      <div class="jfg-creator-grid">
+        <article class="jfg-creator">
+          <div class="jfg-creator-avatar jfg-avatar--a">林</div>
+          <h3>林间放映室</h3>
+          <div class="jfg-creator-role">城市探索 · 影像记录</div>
+          <p class="jfg-creator-desc">专注老城区与公共空间的影像记录，习惯用固定机位等待光线变化，作品节奏偏慢。</p>
+          <div class="jfg-creator-stats">
+            <div><b>64</b><span>作品</span></div>
+            <div><b>12.8万</b><span>关注</span></div>
+          </div>
+          <button class="jfg-creator-more" data-jfg-author="林间放映室|城市探索创作者，持续记录老城区公共空间，代表作《四方一阁》系列。">查看档案 →</button>
+        </article>
+        <article class="jfg-creator">
+          <div class="jfg-creator-avatar jfg-avatar--e">苏</div>
+          <h3>苏打水日常</h3>
+          <div class="jfg-creator-role">生活方式 · 日常记录</div>
+          <p class="jfg-creator-desc">独居生活第七年，记录收纳、做饭与时间管理，不美化日常，也不贩卖焦虑。</p>
+          <div class="jfg-creator-stats">
+            <div><b>98</b><span>作品</span></div>
+            <div><b>18.4万</b><span>关注</span></div>
+          </div>
+          <button class="jfg-creator-more" data-jfg-author="苏打水日常|生活方式创作者，专注独居日常记录与实用收纳经验分享。">查看档案 →</button>
+        </article>
+        <article class="jfg-creator">
+          <div class="jfg-creator-avatar jfg-avatar--d">闻</div>
+          <h3>闻风工作室</h3>
+          <div class="jfg-creator-role">创作幕后 · 团队创作</div>
+          <p class="jfg-creator-desc">三人小团队，公开完整制作流程与失败案例，希望降低新人的入门门槛。</p>
+          <div class="jfg-creator-stats">
+            <div><b>42</b><span>作品</span></div>
+            <div><b>9.6万</b><span>关注</span></div>
+          </div>
+          <button class="jfg-creator-more" data-jfg-author="闻风工作室|三人影像团队，专注幕后流程公开与新人友好型教程。">查看档案 →</button>
+        </article>
+        <article class="jfg-creator">
+          <div class="jfg-creator-avatar jfg-avatar--f">许</div>
+          <h3>许工镜头</h3>
+          <div class="jfg-creator-role">实用技巧 · 设备与方法</div>
+          <p class="jfg-creator-desc">工程师转行的影像作者，擅长用低成本设备解决问题，教程以实测对比为主。</p>
+          <div class="jfg-creator-stats">
+            <div><b>76</b><span>作品</span></div>
+            <div><b>15.2万</b><span>关注</span></div>
+          </div>
+          <button class="jfg-creator-more" data-jfg-author="许工镜头|工程师背景的影像作者，专注低成本设备实测与实用拍摄方法。">查看档案 →</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="jfg-section jfg-section--alt" id="jfgStories">
+    <div class="jfg-container">
+      <div class="jfg-section-head">
+        <span class="jfg-eyebrow">故事随笔</span>
+        <h2 class="jfg-h2">影像背后，那些没能剪进正片的片段</h2>
+        <p>来自创作者的文字手记，与视频内容互为补充，记录下拍摄现场的真实状态。</p>
+      </div>
+      <div class="jfg-story-grid">
+        <article class="jfg-story">
+          <div class="jfg-story-no">01</div>
+          <h3>为了等一场雨，我们在阁楼下坐了六个小时</h3>
+          <p>天气预报说下午三点有雨，结果是四点半才落下来。我们把机器架在屋檐下，拍到了水沿着瓦片流下来的那一段。后来正片只用了十二秒，但那六个小时里邻居递来的三杯热茶，我记了很久。</p>
+          <div class="jfg-story-foot"><span class="jfg-avatar jfg-avatar--a">林</span>林间放映室 · 2026 年 11 月</div>
+        </article>
+        <article class="jfg-story">
+          <div class="jfg-story-no">02</div>
+          <h3>第一次投稿被退回，我反而松了口气</h3>
+          <p>编辑写了两页修改意见，指出画面过曝和叙事跳跃的问题，最后一句是“素材很好，别急”。我重剪了四遍，第三版才通过。现在回看第一版，确实太急了。这个平台愿意花时间告诉新人哪里不对，很难得。</p>
+          <div class="jfg-story-foot"><span class="jfg-avatar jfg-avatar--c">顾</span>阁楼访客 · 2026 年 10 月</div>
+        </article>
+        <article class="jfg-story">
+          <div class="jfg-story-no">03</div>
+          <h3>把工作室搬回家之后，我重新学会了分配时间</h3>
+          <p>以前觉得自由职业最难的是接活，后来发现是分不清什么时候该停。现在设定每天只剪四小时，剩下的时间用来散步和整理素材。作品数量少了，但被完整看完的比例反而高了。</p>
+          <div class="jfg-story-foot"><span class="jfg-avatar jfg-avatar--d">闻</span>闻风工作室 · 2026 年 9 月</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="jfg-section" id="jfgReviews">
+    <div class="jfg-container">
+      <div class="jfg-section-head">
+        <span class="jfg-eyebrow">社区口碑</span>
+        <h2 class="jfg-h2">来自观众与创作者的真实评价</h2>
+        <p>以下评价来自社区留言与投稿反馈，已获得用户授权展示，保留原始表达。</p>
+      </div>
+      <div class="jfg-review-grid">
+        <div class="jfg-review">
+          <div class="jfg-review-head"><span class="jfg-avatar jfg-avatar--b">陈</span><div><b>陈默</b><small>观众 · 关注两年</small></div></div>
+          <p>很少见到一个视频站点愿意把专题做得这么细。我按城市找片子，能一路从一个视频翻到相关的访谈和幕后，感觉是真的有人在整理内容，而不是堆在一起。</p>
+          <div class="jfg-review-stars">★★★★★</div>
+        </div>
+        <div class="jfg-review">
+          <div class="jfg-review-head"><span class="jfg-avatar jfg-avatar--f">许</span><div><b>许工镜头</b><small>创作者 · 合作一年</small></div></div>
+          <p>投稿审核给的意见很具体，会指出哪一段节奏拖了、哪个转场多余。这对创作者来说是实打实的帮助，比一句“再接再厉”有用得多。</p>
+          <div class="jfg-review-stars">★★★★★</div>
+        </div>
+        <div class="jfg-review">
+          <div class="jfg-review-head"><span class="jfg-avatar jfg-avatar--e">苏</span><div><b>苏打水日常</b><small>创作者 · 合作两年</small></div></div>
+          <p>我最喜欢的是这里的评论区氛围，大家会认真讨论内容本身，而不是只留一句“好看”。有几次观众指出了我视频里的事实错误，我都改了。</p>
+          <div class="jfg-review-stars">★★★★☆</div>
+        </div>
+        <div class="jfg-review">
+          <div class="jfg-review-head"><span class="jfg-avatar jfg-avatar--a">周</span><div><b>周明远</b><small>观众 · 新用户</small></div></div>
+          <p>加载速度很稳，画质清晰，没有乱七八糟的弹窗。作为普通观众，我要的就是这种干净的观看体验，找内容也不费劲。</p>
+          <div class="jfg-review-stars">★★★★★</div>
+        </div>
+        <div class="jfg-review">
+          <div class="jfg-review-head"><span class="jfg-avatar jfg-avatar--d">闻</span><div><b>闻风工作室</b><small>创作者 · 合作一年</small></div></div>
+          <p>专题企划的征集信息发布得很及时，选题方向也说得清楚，我们团队基本每次都跟着做。希望以后能多一些跨城市的联合拍摄。</p>
+          <div class="jfg-review-stars">★★★★☆</div>
+        </div>
+        <div class="jfg-review">
+          <div class="jfg-review-head"><span class="jfg-avatar jfg-avatar--c">顾</span><div><b>顾青</b><small>观众 · 关注一年</small></div></div>
+          <p>看完一本书店主的访谈，我专门去了一趟那家店。影像能把人带到现场，这是我继续留在这个社区的原因。</p>
+          <div class="jfg-review-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作伙伴 -->
+  <section class="jfg-section jfg-section--alt" id="jfgNews">
+    <div class="jfg-container">
+      <div class="jfg-news-grid">
+        <div>
+          <span class="jfg-eyebrow">企业动态</span>
+          <h2 class="jfg-h2" style="margin-bottom:26px;">集方阁云近期更新与官方发布</h2>
+          <div class="jfg-timeline">
+            <div class="jfg-timeline-item">
+              <div class="jfg-timeline-date">2026 年 11 月 16 日</div>
+              <h3>冬季影像企划《四方一阁》正式上线</h3>
+              <p>首批 12 支原创短片入库，四座城市、八位创作者参与，专题页同步开放浏览与投稿。</p>
+            </div>
+            <div class="jfg-timeline-item">
+              <div class="jfg-timeline-date">2026 年 11 月 08 日</div>
+              <h3>创作者扶持计划第三期开始报名</h3>
+              <p>本期提供设备借用、剪辑指导与专题推荐位支持，报名截止 12 月 20 日，面向所有注册创作者。</p>
+            </div>
+            <div class="jfg-timeline-item">
+              <div class="jfg-timeline-date">2026 年 10 月 27 日</div>
+              <h3>投稿流程优化：审核意见支持线上沟通</h3>
+              <p>创作者可在投稿后台直接查看编辑意见并回复补充材料，平均反馈时间缩短至 48 小时内。</p>
+            </div>
+            <div class="jfg-timeline-item">
+              <div class="jfg-timeline-date">2026 年 10 月 12 日</div>
+              <h3>《幕后七问》第七期发布</h3>
+              <p>本期访谈对象为独立影像作者顾青，聊书店纪录片的拍摄取舍与时长控制。</p>
+            </div>
+            <div class="jfg-timeline-item">
+              <div class="jfg-timeline-date">2026 年 09 月 30 日</div>
+              <h3>秋季影像挑战赛结果公布</h3>
+              <p>共收到 218 支投稿，12 支作品入选官方推荐，其中 5 支进入年度专题候选名单。</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="jfg-eyebrow">合作品牌</span>
+          <h2 class="jfg-h2" style="margin-bottom:26px;">与我们共同支持原创影像的伙伴</h2>
+          <div class="jfg-partner-wall">
+            <div class="jfg-partner">青石影像器材<small>设备支持</small></div>
+            <div class="jfg-partner">南岸书店<small>场地合作</small></div>
+            <div class="jfg-partner">拾光后期工作室<small>后期服务</small></div>
+            <div class="jfg-partner">城市公共艺术中心<small>展映合作</small></div>
+            <div class="jfg-partner">小溪咖啡<small>社区活动</small></div>
+            <div class="jfg-partner">立方声音实验室<small>声音设计</small></div>
+          </div>
+          <div style="margin-top:24px;">
+            <a class="jfg-btn jfg-btn--line" href="#jfgContact">洽谈品牌合作</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="jfg-section" id="jfgFaq">
+    <div class="jfg-container">
+      <div class="jfg-section-head" style="text-align:center;margin-left:auto;margin-right:auto;">
+        <span class="jfg-eyebrow" style="justify-content:center;">帮助中心</span>
+        <h2 class="jfg-h2">关于集方阁云，你可能想了解的问题</h2>
+      </div>
+      <div class="jfg-faq">
+        <details>
+          <summary>集方阁云是什么类型的平台？</summary>
+          <div class="jfg-faq-answer">集方阁云是一个以影像内容为核心的品牌视频门户，围绕城市探索、生活方式、人物访谈与创作幕后等方向，持续收录原创作品，并通过专题企划、创作者扶持与社区互动，构建长期运营的内容生态。</div>
+        </details>
+        <details>
+          <summary>如何向集方阁云投稿？投稿有什么要求？</summary>
+          <div class="jfg-faq-answer">点击页头的“我要投稿”即可填写投稿表单。我们要求作品为原创、画质高清、结构完整，时长不限；未完成或纯素材拼接的内容暂不收录。审核结果通常在 48 小时内反馈，编辑会附上具体修改建议。</div>
+        </details>
+        <details>
+          <summary>投稿审核不通过，还能再次提交吗？</summary>
+          <div class="jfg-faq-answer">可以。我们鼓励创作者根据编辑意见修改后重新提交，同一作品最多可提交三次。若三次仍未通过，建议先参考平台内的实用技巧类内容，或联系编辑部获取更具体的建议。</div>
+        </details>
+        <details>
+          <summary>平台上的内容都可以转发分享吗？</summary>
+          <div class="jfg-faq-answer">站内作品均支持分享功能，个人社交平台转发请保留原出处与创作者信息。涉及商业用途的二次使用，需要通过联系页面提交授权申请，我们会协助对接创作者。</div>
+        </details>
+        <details>
+          <summary>创作者扶持计划提供哪些支持？</summary>
+          <div class="jfg-faq-answer">目前包括设备借用、后期指导、专题推荐位、联合企划机会与创作灵感支持五个部分。每期名额有限，需在线报名并提交近期作品，评审以内容完成度与更新持续性为主要标准。</div>
+        </details>
+        <details>
+          <summary>企业在集方阁云可以做哪些合作？</summary>
+          <div class="jfg-faq-answer">我们提供品牌专题定制、创作者联合企划、线下展映与内容授权等合作形式。合作内容会明确标注合作关系，保持内容与商业信息的清晰边界，这也是我们长期坚持的原则。</div>
+        </details>
+        <details>
+          <summary>发现内容存在事实错误或侵权，如何反馈？</summary>
+          <div class="jfg-faq-answer">可以通过联系页面提交反馈，注明具体视频与问题描述。我们设有专门的内容核验流程，一般会在三个工作日内处理并回复；确认存在问题的内容会及时下架或修正。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 投稿联系 CTA -->
+  <section class="jfg-section" id="jfgContact" style="padding-top:0;">
+    <div class="jfg-container">
+      <div class="jfg-cta">
+        <div>
+          <h2>把你的影像放进这座阁楼</h2>
+          <p>无论你用的是手机还是专业设备，只要内容真实、表达清楚，集方阁云都愿意给你一个稳定的展示位置。投稿、合作、反馈，都可以从这里开始。</p>
+          <div class="jfg-cta-actions">
+            <button class="jfg-btn jfg-btn--amber" data-jfg-modal="submit">立即投稿</button>
+            <button class="jfg-btn jfg-btn--ghost" data-jfg-share>分享本站</button>
+          </div>
+        </div>
+        <div class="jfg-cta-side">
+          <div class="jfg-cta-info"><b>投稿邮箱</b>creator@jifangge.example</div>
+          <div class="jfg-cta-info"><b>品牌合作</b>partner@jifangge.example</div>
+          <div class="jfg-cta-info"><b>内容反馈</b>feedback@jifangge.example</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="jfg-footer">
+  <div class="jfg-container">
+    <div class="jfg-footer-grid">
+      <div class="jfg-footer-brand">
+        <a href="#jfgHome" class="jfg-logo" aria-label="集方阁云官方网站">
+          <span class="jfg-logo-mark"><span></span><span></span><span></span></span>
+          <span class="jfg-logo-text"><b>集方阁云</b><i>JIFANGGE CLOUD</i></span>
+        </a>
+        <p>集方阁云官方网站，一家持续运营的影像内容品牌企业。以原创、正版、高清为基本标准，深耕城市与生活影像垂直领域，为用户与创作者搭建值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#jfgFeature">视频焦点</a></li>
+          <li><a href="#jfgVideos">社区热门</a></li>
+          <li><a href="#jfgTopics">专题企划</a></li>
+          <li><a href="#jfgStories">故事随笔</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#jfgAbout">品牌故事</a></li>
+          <li><a href="#jfgCreators">创作者矩阵</a></li>
+          <li><a href="#jfgNews">企业动态</a></li>
+          <li><a href="#jfgFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li><a href="#jfgContact">投稿与反馈</a></li>
+          <li><a href="#jfgContact">品牌合作</a></li>
+          <li><a href="#jfgContact">内容授权</a></li>
+          <li><a href="#jfgContact">加入我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="jfg-footer-bottom">
+      <span>© 2026 集方阁云 版权所有 · 官方网站 · 持续运营中</span>
+      <span>内容均为原创或已获授权 · 品牌备案号 20260815JFG</span>
+    </div>
+  </div>
+</footer>
+
+<button class="jfg-backtop" id="jfgBackTop" aria-label="回到顶部">↑</button>
+<div class="jfg-toast" id="jfgToast"></div>
+
+<!-- 投稿弹窗 -->
+<div class="jfg-modal-mask" id="jfgModalSubmit">
+  <div class="jfg-modal jfg-modal-wrap">
+    <button class="jfg-modal-close" data-jfg-close aria-label="关闭">×</button>
+    <h3>向集方阁云投稿</h3>
+    <p class="jfg-modal-sub">填写基本信息，编辑会在 48 小时内通过邮件与你联系。请确保作品为原创。</p>
+    <label for="jfgTitleInput">作品标题</label>
+    <input id="jfgTitleInput" type="text" placeholder="例如：四方一阁 · 旧城日落">
+    <label for="jfgNameInput">创作者昵称</label>
+    <input id="jfgNameInput" type="text" placeholder="你的常用署名">
+    <label for="jfgCatSelect">内容方向</label>
+    <select id="jfgCatSelect">
+      <option>城市探索</option>
+      <option>生活方式</option>
+      <option>人物访谈</option>
+      <option>创作幕后</option>
+      <option>实用技巧</option>
+      <option>其他方向</option>
+    </select>
+    <label for="jfgDescInput">作品简述</label>
+    <textarea id="jfgDescInput" placeholder="简单说说拍的是什么、想表达什么"></textarea>
+    <div class="jfg-modal-actions">
+      <button class="jfg-btn jfg-btn--line" data-jfg-close>取消</button>
+      <button class="jfg-btn jfg-btn--primary" id="jfgSubmitBtn">提交投稿</button>
+    </div>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="jfg-modal-mask" id="jfgModalShare">
+  <div class="jfg-modal jfg-modal-wrap">
+    <button class="jfg-modal-close" data-jfg-close aria-label="关闭">×</button>
+    <h3>分享给同好</h3>
+    <p class="jfg-modal-sub">把这个页面分享给正在记录生活的朋友，也可以直接复制链接。</p>
+    <div class="jfg-share-row">
+      <button data-jfg-share-item="微信">微信</button>
+      <button data-jfg-share-item="微博">微博</button>
+      <button data-jfg-share-item="QQ">QQ</button>
+    </div>
+    <div class="jfg-modal-actions">
+      <button class="jfg-btn jfg-btn--primary" id="jfgCopyBtn">复制页面链接</button>
+    </div>
+  </div>
+</div>
+
+<!-- 作者档案弹窗 -->
+<div class="jfg-modal-mask" id="jfgModalAuthor">
+  <div class="jfg-modal jfg-modal-wrap">
+    <button class="jfg-modal-close" data-jfg-close aria-label="关闭">×</button>
+    <h3 id="jfgAuthorName">创作者档案</h3>
+    <p class="jfg-modal-sub" id="jfgAuthorDesc"></p>
+    <div class="jfg-modal-actions">
+      <button class="jfg-btn jfg-btn--line" data-jfg-close>关闭</button>
+      <button class="jfg-btn jfg-btn--primary" data-jfg-close>关注动态</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  var toastEl = document.getElementById('jfgToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 吸顶高度用于锚点偏移 */
+  function updateStickyHeight(){
+    var sticky = document.getElementById('jfgSticky');
+    if(sticky){
+      document.documentElement.style.setProperty('--jfg-sticky-h', sticky.offsetHeight + 'px');
+    }
+  }
+  updateStickyHeight();
+  window.addEventListener('resize', updateStickyHeight);
+
+  /* 移动端导航 */
+  var burger = document.getElementById('jfgBurger');
+  var mobileNav = document.getElementById('jfgMobileNav');
+  burger.addEventListener('click', function(){
+    var open = burger.classList.toggle('is-open');
+    mobileNav.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    updateStickyHeight();
+  });
+  mobileNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      burger.classList.remove('is-open');
+      mobileNav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+      updateStickyHeight();
+    }
+  });
+
+  /* 锚点滚动偏移 */
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = link.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var offset = document.getElementById('jfgSticky').offsetHeight + 14;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: top, behavior:'smooth' });
+    });
+  });
+
+  /* 回到顶部 */
+  var backTop = document.getElementById('jfgBackTop');
+  window.addEventListener('scroll', function(){
+    backTop.classList.toggle('is-show', window.pageYOffset > 520);
+  });
+  backTop.addEventListener('click', function(){
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-jfg-like]');
+    if(likeBtn){
+      var b = likeBtn.querySelector('b');
+      var liked = likeBtn.classList.toggle('is-liked');
+      var num = parseInt(b.textContent.replace(/[^\d]/g,''),10) || 0;
+      b.textContent = liked ? (num + 1) : Math.max(0, num - 1);
+      showToast(liked ? '已点赞，感谢支持' : '已取消点赞');
+      return;
+    }
+    var saveBtn = e.target.closest('[data-jfg-save]');
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('is-saved');
+      saveBtn.textContent = saved ? '★ 已收藏' : '☆ 收藏';
+      showToast(saved ? '已加入收藏' : '已取消收藏');
+      return;
+    }
+  });
+
+  /* 弹窗控制 */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(m) m.classList.add('is-open');
+  }
+  function closeAllModal(){
+    document.querySelectorAll('.jfg-modal-mask').forEach(function(m){
+      m.classList.remove('is-open');
+    });
+  }
+  document.addEventListener('click', function(e){
+    var opener = e.target.closest('[data-jfg-modal]');
+    if(opener){
+      var type = opener.getAttribute('data-jfg-modal');
+      if(type === 'submit') openModal('jfgModalSubmit');
+      return;
+    }
+    if(e.target.closest('[data-jfg-close]')){ closeAllModal(); return; }
+    if(e.target.classList.contains('jfg-modal-mask')){ closeAllModal(); return; }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeAllModal();
+  });
+
+  /* 分享 */
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-jfg-share]') && !e.target.closest('[data-jfg-share-item]')){
+      openModal('jfgModalShare');
+    }
+  });
+  document.getElementById('jfgCopyBtn').addEventListener('click', function(){
+    var url = window.location.href.split('#')[0];
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){
+        showToast('链接已复制到剪贴板');
+      }).catch(function(){
+        showToast('复制失败，请手动复制地址栏链接');
+      });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      try{ document.execCommand('copy'); showToast('链接已复制到剪贴板'); }
+      catch(err){ showToast('复制失败，请手动复制地址栏链接'); }
+      document.body.removeChild(ta);
+    }
+  });
+  document.querySelectorAll('[data-jfg-share-item]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showToast('已生成' + btn.getAttribute('data-jfg-share-item') + '分享提示');
+    });
+  });
+
+  /* 作者档案 */
+  document.addEventListener('click', function(e){
+    var ab = e.target.closest('[data-jfg-author]');
+    if(!ab) return;
+    var parts = ab.getAttribute('data-jfg-author').split('|');
+    document.getElementById('jfgAuthorName').textContent = parts[0] || '创作者';
+    document.getElementById('jfgAuthorDesc').textContent = parts[1] || '';
+    openModal('jfgModalAuthor');
+  });
+
+  /* 投稿提交 */
+  document.getElementById('jfgSubmitBtn').addEventListener('click', function(){
+    var title = document.getElementById('jfgTitleInput').value.trim();
+    var name = document.getElementById('jfgNameInput').value.trim();
+    if(!title || !name){
+      showToast('请先填写作品标题与昵称');
+      return;
+    }
+    showToast('投稿已提交，编辑将在 48 小时内联系你');
+    document.getElementById('jfgTitleInput').value = '';
+    document.getElementById('jfgNameInput').value = '';
+    document.getElementById('jfgDescInput').value = '';
+    closeAllModal();
+  });
+
+  /* 标签筛选 */
+  var filters = document.querySelectorAll('[data-jfg-filter]');
+  var cards = document.querySelectorAll('#jfgVideoGrid .jfg-video-card');
+  var noResult = document.getElementById('jfgNoResult');
+  filters.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filters.forEach(function(b){ b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      var cat = btn.getAttribute('data-jfg-filter');
+      var shown = 0;
+      cards.forEach(function(card){
+        var match = (cat === 'all') || (card.getAttribute('data-jfg-cat') === cat);
+        card.style.display = match ? '' : 'none';
+        if(match) shown++;
+      });
+      noResult.classList.toggle('is-show', shown === 0);
+    });
+  });
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('jfgSearchInput');
+  var searchForm = document.getElementById('jfgSearchForm');
+  var searchResult = document.getElementById('jfgSearchResult');
+  function doSearch(){
+    var q = (searchInput.value || '').trim().toLowerCase();
+    if(!q) return;
+    filters.forEach(function(b){ b.classList.remove('is-active'); });
+    var shown = 0;
+    cards.forEach(function(card){
+      var text = card.textContent.toLowerCase();
+      var match = text.indexOf(q) !== -1;
+      card.style.display = match ? '' : 'none';
+      if(match) shown++;
+    });
+    searchResult.classList.add('is-show');
+    searchResult.textContent = '搜索“' + searchInput.value.trim() + '”找到 ' + shown + ' 条相关内容';
+    noResult.classList.toggle('is-show', shown === 0);
+    if(shown > 0){
+      var grid = document.getElementById('jfgVideoGrid');
+      var offset = document.getElementById('jfgSticky').offsetHeight + 14;
+      var top = grid.getBoundingClientRect().top + window.pageYOffset - offset - 40;
+      window.scrollTo({ top: top, behavior:'smooth' });
+    }
+  }
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    doSearch();
+  });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+  searchInput.addEventListener('input', function(){
+    if(searchInput.value.trim() === ''){
+      searchResult.classList.remove('is-show');
+      document.querySelector('[data-jfg-filter="all"]').click();
+    }
+  });
+
+  /* 数字滚动 */
+  var counted = false;
+  var countEls = document.querySelectorAll('[data-jfg-count]');
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    countEls.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-jfg-count'),10) || 0;
+      var start = Math.max(0, target - 120);
+      var cur = start;
+      var step = Math.max(1, Math.round(target / 40));
+      var timer = setInterval(function(){
+        cur += step;
+        if(cur >= target){ cur = target; clearInterval(timer); }
+        el.textContent = cur;
+      }, 26);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCount(); io.disconnect(); }
+      });
+    }, { threshold: 0.3 });
+    var heroStats = document.querySelector('.jfg-hero-stats');
+    if(heroStats) io.observe(heroStats);
+  } else {
+    runCount();
+  }
+
+  window.addEventListener('resize', updateStickyHeight);
+})();
+</script>
+
+</body>
+                                        </html>
